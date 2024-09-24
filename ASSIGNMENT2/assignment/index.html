@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+         screens: {
+          sm: '550px',
+          md: '800px',
+          lg: '1200px',
+          xl: '1440px',
+         },
+         fontFamily: {
+          sans: ['Graphik', 'sans-serif'],
+          serif: ['Merriweather', 'serif'],
+         },
+         extend: {
+          colors: {
+            primary: '#ff5733',
+            secondary: '#fffc33',
+          },
+         },
+      },
+    }
+  </script>
+</head>
+<body class="h-[100vh] bg-[aliceblue] font-sans ">
+  <nav class="flex flex-1 justify-around p-5  ">
+    <img src="../img/logo.svg" class="w-[100px]" alt="Logo">
+    <div class="flex gap-[40px]">
+      <a href="#" class="">Features</a>
+      <a href="#" class="">Team</a>
+      <a href="#" class="">Sign in</a>
+    </div>
+  </nav>
+  <article class="flex flex-1 justify-evenly flex-wrap">
+    <div class="pt-[150px]">
+    <h2 class="text-3xl font-bold w-[450px] font-sans ">All your files in one secure
+      location, accessible anywhere.
+    </h2>
+    <p class="text-md w-[480px] pt-[20px]">
+      Fylo stores your most important files in one secure location,
+      Access them where you need, share and collaborate with friends,
+      and co-workers.
+    </p>
+    <div class="flex gap-[10px] pt-[20px] flex-1">
+      <input type="email" class="border border-gray-500 rounded-md border-w-3 px-[40px]"
+       placeholder="Enter your email...">
+      <button class="px-10 rounded-md py-2 text-white bg-blue-700">Get Started</button>
+    </div>
+  </div>
+    <div class="pt-[50px]">
+      <img src="../img/illustration-1.svg" class="w-[600px]" alt="">
+    </div> 
+  </article> 
+</body>
+</html>
